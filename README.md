@@ -1,2 +1,0 @@
-# blade
-Laravel Blade
