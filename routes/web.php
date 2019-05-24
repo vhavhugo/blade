@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('news.index')->with([
+        'nome' => 'Hugo <strong>Augusto</strong><script>alert("executou sem permissão")</script>',
+        'description' => 'teste php',
+        'posts' => [
+            [
+                'subject' => 'Novidades do PHP 7.2',
+                'content' => 'Conheça as novidades do php...'
+            ],
+            [
+                'subject' => 'Novidades do C#',
+                'content' => 'Conheça as novidades do C#...'
+            ]
+        ]
+    ]);
 });
