@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('news.index')->with([
-        'nome' => 'Hugo <strong>Augusto</strong><script>alert("executou sem permissão")</script>',
+        'nome' => 'Hugo <strong>Augusto</strong>',
         'description' => 'teste php',
         'posts' => [
             [
