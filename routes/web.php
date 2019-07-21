@@ -13,16 +13,17 @@
 
 Route::get('/', function () {
     return view('news.index')->with([
-        'nome' => 'Hugo <strong>Augusto</strong>',
-        'description' => 'teste php',
+        'name' => 'Blog do Treinaweb',
+        'slug' => 'Laravel Blade',
+        'description' => 'Novidades de tecnologia',
         'posts' => [
             [
                 'subject' => 'Novidades do PHP 7.2',
-                'content' => 'Conheça as novidades do php...'
+                'content' => 'Conheca as novidades do php...'
             ],
             [
-                'subject' => 'Novidades do C#',
-                'content' => 'Conheça as novidades do C#...'
+                'subject' => 'Novidades do C# 8',
+                'content' => 'Conheca as novidades do C#...'
             ]
         ]
     ]);
