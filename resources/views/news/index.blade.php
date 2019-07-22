@@ -66,13 +66,13 @@
           @forelse($posts as $post)
 
 
-              @continue ($post['category'] == 'java')
+              {{--@continue ($post['category'] == 'java')--}}
 
 
           <div class="post-preview">
             <a href="post.html">
               <h2 class="post-title">
-                {{ $post['subject'] }}
+                ({{ $loop->iteration }} / {{ $loop->count }}) {{ $post['subject'] }}
               </h2>
               <h3 class="post-subtitle">
                 {{ $post['content'] }}
@@ -81,7 +81,9 @@
             <p class="post-meta">Postado por <a href="#">{{ $post['author'] }}</a> em {{ $post['date'] }}
             </p>
           </div>
-          <hr>
+            @if(! $loop->last)
+              <hr>
+            @endif
             @empty
             <div class="post-preview">
               <p>Nenhum post encontrado.</p>
