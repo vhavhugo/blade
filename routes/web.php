@@ -19,12 +19,28 @@ Route::get('/', function () {
         'posts' => [
             [
                 'subject' => 'Novidades do PHP 7.2',
-                'content' => 'Conheca as novidades do php...'
+                'content' => 'Conheca as novidades do php...',
+                'author' => 'Hugo do Valle',
+                'date' => '24 de abril de 1981'
             ],
             [
                 'subject' => 'Novidades do C# 8',
-                'content' => 'Conheca as novidades do C#...'
-            ]
+                'content' => 'Conheca as novidades do C#...',
+                'author' => 'Hugo do Valle',
+                'date' => '24 de abril de 1981'
+            ],
+            [
+                'subject' => 'Novidades do Java',
+                'content' => 'Conheca as novidades do java...',
+                'author' => 'Hugo do Valle',
+                'date' => '24 de abril de 1981'
+            ],
+            [
+                'subject' => 'Novidades do Javascript',
+                'content' => 'Conheca as novidades do javascript...',
+                'author' => 'Hugo do Valle',
+                'date' => '24 de abril de 1981'
+            ],
         ]
     ]);
 });
