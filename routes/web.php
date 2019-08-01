@@ -49,3 +49,7 @@ Route::get('/', function () {
         ]
     ]);
 });
+
+//Route::get('/post', function(){
+//    return view('main.single');
+//});
